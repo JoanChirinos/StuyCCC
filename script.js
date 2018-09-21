@@ -46,7 +46,7 @@ function pop_links() {
     if (!showing_links) {
         l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
         for (var i = 0; i < links.length; i++) {
-            l += "<li><a target=\"_blank\"href=\"Links/" + links[i][1] + "\">" + links[i][0] + "</a></li>\n";
+            l += "<li><a target=\"_blank\"href=\"" + links[i][1] + "\">" + links[i][0] + "</a></li>\n";
         }
         l += "</ul></div></div>\n";
         showing_links = true;
