@@ -1,1 +1,15 @@
+.space-sm {
+    height: 5px;
+}
 
+.space-md {
+    height: 10px;
+}
+
+.space-lg {
+    height: 20px;
+}
+
+#title {
+    font-family: "Lobster", cursive;
+}

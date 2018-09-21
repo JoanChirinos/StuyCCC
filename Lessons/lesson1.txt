@@ -1,0 +1,14 @@
+Lesson 1: What is this club
+First, the leadership shall introduce themselves
+Then you guys will introduce yourselves
+
+In this club, you will learn
+!!ulist!!
+How to write python
+How to do CS
+How to think in CS
+How to apply that CS knowledge to competitive computing/programming
+!!endulist!!
+
+a[This is my GitHub account](https://github.com/JoanChirinos)
+Thanks bros!
