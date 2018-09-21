@@ -26,29 +26,10 @@ var leadership = [
     ['Simon Berens', 'Senior', 'Teacher', 'None']
 ];
 
-function pop_leadership() {
-    console.log('\n\n=====  populating leadership =====\n');
-    var l = ""
-    if (!showing_leadership) {
-        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
-        for (var i = 0; i < leadership.length; i++) {
-            var p = leadership[i];
-            l += "<h3>" + p[0] + '</h3>\n';
-            if (p[3] != 'None') {
-                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
-            }
-            l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
-        }
-        l += "</ul></div></div>\n";
-        showing_leadership = true;
-    } else showing_leadership = false;
-    document.getElementById("leadership").innerHTML = l;
-    console.log('===== done populating leadership =====');
-}
-
 var showing_lessons = false;
 var showing_utils = false;
 var showing_links = false;
+var showing_leadership = false;
 
 function pop_lessons() {
     console.log('\n\n=====  populating lessons =====\n');
@@ -96,4 +77,24 @@ function pop_links() {
     } else showing_links = false;
     document.getElementById("links").innerHTML = l;
     console.log('===== done populating links =====');
+}
+
+function pop_leadership() {
+    console.log('\n\n=====  populating leadership =====\n');
+    var l = ""
+    if (!showing_leadership) {
+        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        for (var i = 0; i < leadership.length; i++) {
+            var p = leadership[i];
+            l += "<h3>" + p[0] + '</h3>\n';
+            if (p[3] != 'None') {
+                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+            }
+            l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
+        }
+        l += "</ul></div></div>\n";
+        showing_leadership = true;
+    } else showing_leadership = false;
+    document.getElementById("leadership").innerHTML = l;
+    console.log('===== done populating leadership =====');
 }
