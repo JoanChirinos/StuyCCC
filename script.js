@@ -3,9 +3,17 @@ var lessons = [
     ['Lesson 1: What is this club?', 'lesson1.html']
 
 ];
-var utils = [[]];
+var utils = [
+    ['CodingBat Python Practice', 'https://codingbat.com/python']
+];
+var links = [
+    ['Rosalind', 'http://rosalind.info/'],
+    ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition']
+];
 
 var showing_lessons = false;
+var showing_utils = false;
+var showing_links = false;
 
 function pop_lessons() {
     var l = ""
@@ -21,7 +29,7 @@ function pop_lessons() {
 }
 
 function pop_utils() {
-    var l = "";
+    var l = ""
     if (!showing_utils) {
         l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
         for (var i = 0; i < utils.length; i++) {
@@ -30,5 +38,18 @@ function pop_utils() {
         l += "</ul></div></div>\n";
         showing_utils = true;
     } else showing_utils = false;
-    document.getElementById("lessons").innerHTML = l;
+    document.getElementById("utils").innerHTML = l;
+}
+
+function pop_links() {
+    var l = ""
+    if (!showing_links) {
+        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        for (var i = 0; i < links.length; i++) {
+            l += "<li><a target=\"_blank\"href=\"Links/" + links[i][1] + "\">" + links[i][0] + "</a></li>\n";
+        }
+        l += "</ul></div></div>\n";
+        showing_links = true;
+    } else showing_links = false;
+    document.getElementById("links").innerHTML = l;
 }
