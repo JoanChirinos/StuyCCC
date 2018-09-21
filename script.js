@@ -83,7 +83,7 @@ function pop_leadership() {
     console.log('\n\n=====  populating leadership =====\n');
     var l = ""
     if (!showing_leadership) {
-        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        l = "<div class=\"row\">\n<div class=\"col\"><center>\n";
         for (var i = 0; i < leadership.length; i++) {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
@@ -92,7 +92,7 @@ function pop_leadership() {
             }
             l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
         }
-        l += "</ul></div></div>\n";
+        l += "</center></div></div>\n";
         showing_leadership = true;
     } else showing_leadership = false;
     document.getElementById("leadership").innerHTML = l;
