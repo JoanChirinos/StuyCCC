@@ -16,6 +16,8 @@
 #
 # Add your own custom html between "!!html!!" and "!!endhtml!!"
 #
+# start a heading with !!h<number>!!. It will be one line
+#
 # others shall be added l8r
 #
 #############################################
@@ -99,6 +101,14 @@ def go():
             url = re.search(r'\(https*://.*\)', full).group()[1:-1]
             html += '<a href="' + url + '">' + inner_text + '</a>\n'
             continue
+            
+        #check for heading
+        x = re.search(r'!!h\d!!', i)
+        if x != None and x.end() == 6:
+            tier = x.group().strip('!h')
+            html += '\n<h' + tier + '>' + i[6:] + '</h' + tier + '>\n\n'
+            continue
+            
         
         #if nothing else worked
         html += '<p>' + i + '</p>\n'
@@ -106,10 +116,11 @@ def go():
         if in_list:
             html += '</li>\n'
     
-    name = input('Output filename: ')
-    
-    straw = open(name, 'w')
+    straw = open(f.rsplit('.', 1)[0] + '.html', 'w')
     straw.write(html)
     straw.close()
     
-    print('Done writing')
+    print("Wrote to " + f.rsplit('.', 1)[0] + ".html")
+    
+
+go()

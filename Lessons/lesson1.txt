@@ -1,14 +1,16 @@
-Lesson 1: What is this club
-First, the leadership shall introduce themselves
-Then you guys will introduce yourselves
+Lesson 1: What is this club?
+First, the leadership shall introduce themselves.
 
-In this club, you will learn
+Now you guys shall introduce yourselves.
+
+In this club you will learn:
 !!ulist!!
 How to write python
-How to do CS
+How to CS
 How to think in CS
-How to apply that CS knowledge to competitive computing/programming
+How to apply CS knowledge to Competitive Programming
 !!endulist!!
 
-a[This is my GitHub account](https://github.com/JoanChirinos)
-Thanks bros!
+First, I want everyone to log in to the desktop in front of you.
+Open up IDLE. If you don't know how to, a teacher will come around to help you.
+!!h3!!You will need to get Python 3 on your home system if you want to do things at home. If you need any help, please don't hesitate to contact me, a VP, or a teacher!
