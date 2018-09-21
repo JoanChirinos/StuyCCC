@@ -84,7 +84,7 @@ function pop_leadership() {
     var l = ""
     if (!showing_leadership) {
         l = "<div class=\"row\">\n<div class=\"col-sm\"><center>\n";
-        for (var i = 0; i < leadership.length / 2; i++) {
+        for (var i = 0; i < leadership.length / 2; i += 2) {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
@@ -95,7 +95,7 @@ function pop_leadership() {
             l += "<p><i>" + p[1] + " | " + p[2] + "</i></p>\n"
         }
         l += "</center></div>\n<div class=\"col-sm\"><center>";
-        for (var i = leadership.length / 2; i < leadership.length; i++) {
+        for (var i = 1; i < leadership.length; i += 2) {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
