@@ -13,3 +13,7 @@
 #title {
     font-family: "Lobster", cursive;
 }
+
+body {
+    background-image: url(data/leaves/leaves.png);
+}
