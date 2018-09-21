@@ -19,3 +19,16 @@ function pop_lessons() {
     } else showing_lessons = false;
     document.getElementById("lessons").innerHTML = l;
 }
+
+function pop_utils() {
+    var l = "";
+    if (!showing_utils) {
+        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        for (var i = 0; i < utils.length; i++) {
+            l += "<li><a target=\"_blank\"href=\"Utils/" + utils[i][1] + "\">" + utils[i][0] + "</a></li>\n";
+        }
+        l += "</ul></div></div>\n";
+        showing_utils = true;
+    } else showing_utils = false;
+    document.getElementById("lessons").innerHTML = l;
+}
