@@ -89,6 +89,8 @@ function pop_leadership() {
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
                 l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+            } else {
+                l += "<img class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
             l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
         }
