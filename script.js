@@ -83,8 +83,8 @@ function pop_leadership() {
     console.log('\n\n=====  populating leadership =====\n');
     var l = ""
     if (!showing_leadership) {
-        l = "<div class=\"row\">\n<div class=\"col\"><center>\n";
-        for (var i = 0; i < leadership.length; i++) {
+        l = "<div class=\"row\">\n<div class=\"col-md\"><center>\n";
+        for (var i = 0; i < leadership.length / 2; i++) {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
@@ -92,7 +92,18 @@ function pop_leadership() {
             } else {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
-            l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
+            l += "<p><i>" + p[1] + " | " + p[2] + "</i></p>\n"
+        }
+        l += "</center></div>\n<div class=\"col-md\"><center>";
+        for (var i = leadership.length / 2; i < leadership.length / 2; i++) {
+            var p = leadership[i];
+            l += "<h3>" + p[0] + '</h3>\n';
+            if (p[3] != 'None') {
+                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+            } else {
+                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
+            }
+            l += "<p><i>" + p[1] + " | " + p[2] + "</i></p>\n"
         }
         l += "</center></div></div>\n";
         showing_leadership = true;
