@@ -11,6 +11,41 @@ var links = [
     ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition']
 ];
 
+var leadership = [
+    ['Joan Chirinos', 'Senior', 'President', 'None'],
+    ['Cathy Cai', 'Senior', 'Vice President', 'None'],
+    ['Fiona Cai', 'Senior', 'Vice President', 'None'],
+    ['Maryann Foley', 'Senior', 'Vice President', 'None'],
+    ['Aaron Li', 'Senior', 'Teacher', 'None'],
+    ['Alexander Liu', 'Senior', 'Teacher', 'None'],
+    ['Bill Ni', 'Senior', 'Teacher', 'None'],
+    ['Jason Tung', 'Senior', 'Teacher', 'None'],
+    ['Johnny Wong', 'Senior', 'Teacher', 'None'],
+    ['Meredith Hu', 'Senior', 'Teacher', 'None'],
+    ['Ricky Lin', 'Senior', 'Teacher', 'None'],
+    ['Simon Berens', 'Senior', 'Teacher', 'None']
+];
+
+function pop_leadership() {
+    console.log('\n\n=====  populating leadership =====\n');
+    var l = ""
+    if (!showing_leadership) {
+        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        for (var i = 0; i < leadership.length; i++) {
+            var p = leadership[i];
+            l += "<h3>" + p[0] + '</h3>\n';
+            if (p[3] != 'None') {
+                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+            }
+            l += "<i>" + p[1] + " | " + p[2] + "</i>\n"
+        }
+        l += "</ul></div></div>\n";
+        showing_leadership = true;
+    } else showing_leadership = false;
+    document.getElementById("leadership").innerHTML = l;
+    console.log('===== done populating leadership =====');
+}
+
 var showing_lessons = false;
 var showing_utils = false;
 var showing_links = false;
