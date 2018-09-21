@@ -21,8 +21,8 @@ function pop_lessons() {
     if (!showing_lessons) {
         l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
         for (var i = 0; i < lessons.length; i++) {
-            l += "<li><a target=\"_blank\"href=\"Lessons/" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n";
-            console.log("<li><a target=\"_blank\"href=\"" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n");
+            l += "<li><a target=\"_blank\" href=\"" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n");
         }
         l += "</ul></div></div>\n";
         showing_lessons = true;
@@ -37,8 +37,8 @@ function pop_utils() {
     if (!showing_utils) {
         l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
         for (var i = 0; i < utils.length; i++) {
-            l += "<li><a target=\"_blank\"href=\"Utils/" + utils[i][1] + "\">" + utils[i][0] + "</a></li>\n";
-            console.log("<li><a target=\"_blank\"href=\"" + utils[i][1] + "\">" + utils[i][0] + "</a></li>\n");
+            l += "<li><a target=\"_blank\" href=\"" + utils[i][1] + "\">" + utils[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + utils[i][1] + "\">" + utils[i][0] + "</a></li>\n");
         }
         l += "</ul></div></div>\n";
         showing_utils = true;
@@ -53,8 +53,8 @@ function pop_links() {
     if (!showing_links) {
         l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
         for (var i = 0; i < links.length; i++) {
-            l += "<li><a target=\"_blank\"href=\"" + links[i][1] + "\">" + links[i][0] + "</a></li>\n";
-            console.log("<li><a target=\"_blank\"href=\"" + links[i][1] + "\">" + links[i][0] + "</a></li>\n");
+            l += "<li><a target=\"_blank\" href=\"" + links[i][1] + "\">" + links[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + links[i][1] + "\">" + links[i][0] + "</a></li>\n");
         }
         l += "</ul></div></div>\n";
         showing_links = true;
