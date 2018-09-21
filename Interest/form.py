@@ -13,7 +13,7 @@ def go():
     email = fs.getvalue('email', 'jchirinos@stuy.edu')
     
     f = open('people.txt', 'a')
-    f.write(','.join([fname, lname, email]))
+    f.write(','.join([fname, lname, email]) + '\n')
     f.close()
     print("""<html><head></head><body><script>window.onload = function() {
     // similar behavior as clicking on a link
