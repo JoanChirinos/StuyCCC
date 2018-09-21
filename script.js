@@ -1,6 +1,6 @@
 var lessons = [
 
-    ['Lesson 1: What is this club?', 'Lessons/lesson1.html']
+    ['Lesson 1: What is this club?', '~jchirinos/Lessons/lesson1.html']
 
 ];
 var utils = [
