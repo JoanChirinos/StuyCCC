@@ -3,6 +3,13 @@ First, the leadership shall introduce themselves.
 
 Now you guys shall introduce yourselves.
 
+!!h3!!And now we have to talk business!
+!!ulist!!
+StuyCCC Shirts
+a[StuyCCC Website](homer.stuy.edu/~jchirinos/StuyCCC)
+Facebook page (would y'all prefer a FB page or just StuyActivities + StuyCCC Website + emails?)
+!!endulist!!
+
 In this club you will learn:
 !!ulist!!
 How to write python
