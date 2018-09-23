@@ -4,11 +4,21 @@ var lessons = [
 
 ];
 var utils = [
+
     ['CodingBat Python Practice', 'https://codingbat.com/python']
+
 ];
 var links = [
+
     ['Rosalind', 'http://rosalind.info/'],
     ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition']
+
+];
+
+var forms = [
+
+    ['Shirt Form', 'Forms/Shirts/Shirts.html']
+
 ];
 
 var leadership = [
@@ -30,6 +40,25 @@ var showing_lessons = false;
 var showing_utils = false;
 var showing_links = false;
 var showing_leadership = false;
+var showing_forms = false;
+
+function do_on_load() {
+    if (lessons.length == 0) {
+        document.getElementById('lessons_button').disabled = true;
+    }
+    if (utils.length == 0) {
+        document.getElementById('utils_button').disabled = true;
+    }
+    if (links.length == 0) {
+        document.getElementById('links_button').disabled = true;
+    }
+    if (forms.length == 0) {
+        document.getElementById('forms_button').disabled = true;
+    }
+    if (leadership.length == 0) {
+        document.getElementById('leadership_button').disabled = true;
+    }
+}
 
 function pop_lessons() {
     console.log('\n\n=====  populating lessons =====\n');
@@ -77,6 +106,22 @@ function pop_links() {
     } else showing_links = false;
     document.getElementById("links").innerHTML = l;
     console.log('===== done populating links =====');
+}
+
+function pop_forms() {
+    console.log('\n\n=====  populating forms =====\n');
+    var l = ""
+    if (!showing_forms) {
+        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
+        for (var i = 0; i < forms.length; i++) {
+            l += "<li><a target=\"_blank\" href=\"" + forms[i][1] + "\">" + forms[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + forms[i][1] + "\">" + forms[i][0] + "</a></li>\n");
+        }
+        l += "</ul></div></div>\n";
+        showing_forms = true;
+    } else showing_forms = false;
+    document.getElementById("forms").innerHTML = l;
+    console.log('===== done populating forms =====');
 }
 
 function pop_leadership() {

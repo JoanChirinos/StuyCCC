@@ -15,9 +15,9 @@
     <title>StuyCCC Homepage</title>
 </head>
 
-<body>
+<body onload="do_on_load();">
     <div class="space-sm"></div>
-    <div class="container">
+    <div class="container" style="max-width: 970px;">
 
 
         <div class="row">
@@ -29,7 +29,7 @@
         <!-- LESSONS -->
         <div class="row">
             <div class="col">
-                <button class="btn btn-lg btn-block btn-success" onclick="pop_lessons();" data-toggle="button">Lessons</button>
+                <button class="btn btn-lg btn-block btn-success" onclick="pop_lessons();" data-toggle="button" id="lessons_button">Lessons</button>
             </div>
         </div>
         <div class="space-sm"></div>
@@ -42,7 +42,7 @@
         <!-- UTILS -->
         <div class="row">
             <div class="col">
-                <button class="btn btn-lg btn-block btn-primary" onclick="pop_utils();" data-toggle="button">Utils</button>
+                <button class="btn btn-lg btn-block btn-primary" onclick="pop_utils();" data-toggle="button" id="utils_button">Utils</button>
             </div>
         </div>
         <div class="space-sm"></div>
@@ -55,7 +55,7 @@
         <!-- LINKS -->
         <div class="row">
             <div class="col">
-                <button class="btn btn-lg btn-block btn-danger" onclick="pop_links();" data-toggle="button">Links</button>
+                <button class="btn btn-lg btn-block btn-danger" onclick="pop_links();" data-toggle="button" id="links_button">Links</button>
             </div>
         </div>
         <div class="space-sm"></div>
@@ -67,11 +67,11 @@
         <!-- FORMS -->
         <div class="row">
             <div class="col">
-                <button class="btn btn-lg btn-block btn-danger" onclick="pop_links();" data-toggle="button">Links</button>
+                <button class="btn btn-lg btn-block btn-warning" onclick="pop_forms();" data-toggle="button" id="forms_button">Forms</button>
             </div>
         </div>
         <div class="space-sm"></div>
-        <div id="links">
+        <div id="forms">
             <!-- FORMS GO HERE -->
         </div>
         <div class="space-sm"></div>
@@ -79,7 +79,7 @@
         <!-- LEADERSHIP -->
         <div class="row">
             <div class="col">
-                <button class="btn btn-lg btn-block btn-info" onclick="pop_leadership();" data-toggle="button">Leadership</button>
+                <button class="btn btn-lg btn-block btn-info" onclick="pop_leadership();" data-toggle="button" id="leadership_button">Leadership</button>
             </div>
         </div>
         <div class="space-sm"></div>
