@@ -20,4 +20,4 @@ dwn_img2.onload = function () {
 };
 
 dwn_img1.src = "/~jchirinos/StuyCCC/data/imgs/Shirt1.png";
-dwn_img1.src = "/~jchirinos/StuyCCC/data/imgs/Shirt1.png";
+dwn_img2.src = "/~jchirinos/StuyCCC/data/imgs/Shirt1.png";
