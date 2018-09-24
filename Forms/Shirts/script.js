@@ -5,6 +5,8 @@ function load_images() {
 }
 */
 
+/********** SUPER USEFUL ASYNCHROUS IMG LOADING SCRIPT **********/
+
 var img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
 
@@ -21,3 +23,5 @@ dwn_img2.onload = function () {
 
 dwn_img1.src = "/~jchirinos/StuyCCC/data/imgs/Shirt1.png";
 dwn_img2.src = "/~jchirinos/StuyCCC/data/imgs/Shirt2.png";
+
+/********** END SUPER USEFUL ASYNCHROUS IMG LOADING SCRIPT **********/
