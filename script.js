@@ -22,19 +22,19 @@ var forms = [
 ];
 
 var leadership = [
-    ['Joan Chirinos', 'Senior', 'President', 'None', 'NetLogo Master'],
+    ['Joan Chirinos', 'Senior', 'President', 'joan.jpg', 'NetLogo Master'],
     ['Cathy Cai', 'Senior', 'Vice President', 'None', ''],
     ['Fiona Cai', 'Senior', 'Vice President', 'None', ''],
     ['Maryann Foley', 'Senior', 'Vice President', 'None', ''],
     ['Aaron Li', 'Senior', 'Teacher', 'None', ''],
     ['Alexander Liu', 'Senior', 'Teacher', 'None', ''],
-    ['Bill Ni', 'Senior', 'Teacher', 'None', ''],
+    ['Bill Ni', 'Senior', 'Teacher', 'bill.jpg', 'yes'],
     ['Jason Tung', 'Senior', 'Teacher', 'None', ''],
     ['Johnny Wong', 'Senior', 'Teacher', 'None', ''],
     ['Meredith Hu', 'Senior', 'Teacher', 'None', ''],
     ['Ricky Lin', 'Senior', 'Teacher', 'None', ''],
     ['Simon Berens', 'Senior', 'Teacher', 'None', ''],
-    ['Leilei Hao', 'Junior', 'Teacher', 'None', '']
+    ['Leilei Hao', 'Junior', 'Teacher', 'leilei.jpg', '']
 ];
 
 var showing_lessons = false;
@@ -134,18 +134,19 @@ function pop_leadership() {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
-                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"/data/imgs/" + p[3] + "\">\n"
             } else {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
-            l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"" + p[4] + "\"</i></p>\n"
+            if (p[4] != '') l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"" + p[4] + "\"</i></p>\n"
+            else l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"Nothing to see here...\"</i></p>\n"
         }
         l += "</center></div>\n<div class=\"col\"><center>";
         for (var i = 1; i < leadership.length; i += 2) {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
-                l += "<img src=\"/data/imgs/" + p[3] + "\">\n"
+                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"/data/imgs/" + p[3] + "\">\n"
             } else {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
