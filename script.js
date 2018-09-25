@@ -134,7 +134,7 @@ function pop_leadership() {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
-                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"/data/imgs/" + p[3] + "\">\n"
+                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/" + p[3] + "\">\n"
             } else {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
@@ -146,7 +146,7 @@ function pop_leadership() {
             var p = leadership[i];
             l += "<h3>" + p[0] + '</h3>\n';
             if (p[3] != 'None') {
-                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"/data/imgs/" + p[3] + "\">\n"
+                l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/" + p[3] + "\">\n"
             } else {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
