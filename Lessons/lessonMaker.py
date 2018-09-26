@@ -32,7 +32,7 @@ def go():
     straw.close()
     
     #start html file
-    html = ""
+    html = "<html>"
     
     #fill in html
     pretext = pretext.split('\n')
@@ -115,6 +115,8 @@ def go():
         
         if in_list:
             html += '</li>\n'
+            
+    html += "</html>"
     
     straw = open(f.rsplit('.', 1)[0] + '.html', 'w')
     straw.write(html)
