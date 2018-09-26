@@ -1,6 +1,7 @@
 var lessons = [
 
-    ['Lesson 1: What is this club?', 'Lessons/lesson1.html']
+    ['Lesson 1: What even is this club?', 'Lessons/lesson1.html'],
+    ['Lesson 2: What even is Python', 'Lessons/lesson2.html']
 
 ];
 var utils = [
