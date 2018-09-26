@@ -1,0 +1,17 @@
+Lesson 1: What even is Python
+
+First, I want everyone to log in to the desktop in front of you.
+Open up IDLE. If you don't know how to, a teacher will come around to help you.
+!!h3!!You will need to get Python 3 on your home system if you want to do things at home. If you need any help, please don't hesitate to contact me, a VP, or a teacher!
+
+We're going to start off by establishing some math stuff (+, -, *, /)
+
+The first problem we're gonna do is a Fibonacci sequence generator.
+Does anyone not know what the Fibonacci sequence is?
+
+First, let's discuss how we would think about this. No coding right now, just thinking
+
+On the board, we're gonna write this thing called pseudocode. It literally translates to fake code. It's important to (at least for now) think about the problems you're solving with fake code before real code.
+
+
+Now we're gonna talk about how to write our algo in Python

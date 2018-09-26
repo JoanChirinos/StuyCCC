@@ -1,9 +1,16 @@
-var lessons = [
+var student_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/lesson0.html'],
     ['Lesson 1: What even is Python', 'Lessons/lesson1.html']
 
 ];
+
+var teacher_lessons = [
+
+
+
+];
+
 var utils = [
 
     ['CodingBat Python Practice', 'https://codingbat.com/python']
@@ -65,10 +72,15 @@ function pop_lessons() {
     console.log('\n\n=====  populating lessons =====\n');
     var l = ""
     if (!showing_lessons) {
-        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
-        for (var i = 0; i < lessons.length; i++) {
-            l += "<li><a target=\"_blank\" href=\"" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n";
-            console.log("<li><a target=\"_blank\" href=\"" + lessons[i][1] + "\">" + lessons[i][0] + "</a></li>\n");
+        l = "<div class=\"row\">\n<div class=\"col\"><b>Student Lessons</b><ul>\n";
+        for (var i = 0; i < student_lessons.length; i++) {
+            l += "<li><a target=\"_blank\" href=\"" + student_lessons[i][1] + "\">" + student_lessons[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + student_lessons[i][1] + "\">" + student_lessons[i][0] + "</a></li>\n");
+        }
+        l += '</ul><b>Teacher Lessons</b><ul>'
+        for (var i = 0; i < teacher_lessons.length; i++) {
+            l += "<li><a target=\"_blank\" href=\"" + teacher_lessons[i][1] + "\">" + teacher_lessons[i][0] + "</a></li>\n";
+            console.log("<li><a target=\"_blank\" href=\"" + teacher_lessons[i][1] + "\">" + teacher_lessons[i][0] + "</a></li>\n");
         }
         l += "</ul></div></div>\n";
         showing_lessons = true;

@@ -1,5 +1,0 @@
-Lesson 1: What even is Python
-
-First, I want everyone to log in to the desktop in front of you.
-Open up IDLE. If you don't know how to, a teacher will come around to help you.
-!!h3!!You will need to get Python 3 on your home system if you want to do things at home. If you need any help, please don't hesitate to contact me, a VP, or a teacher!
