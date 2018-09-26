@@ -1,7 +1,7 @@
 var student_lessons = [
 
-    ['Lesson 0: What even is this club?', 'Lessons/lesson0.html'],
-    ['Lesson 1: What even is Python', 'Lessons/lesson1.html']
+    ['Lesson 0: What even is this club?', 'Student/Lessons/lesson0.html'],
+    ['Lesson 1: What even is Python', 'Student/Lessons/lesson1.html']
 
 ];
 
