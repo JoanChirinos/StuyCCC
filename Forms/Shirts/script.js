@@ -21,7 +21,7 @@ dwn_img2.onload = function () {
     img2.src = this.src;
 };
 
-dwn_img1.src = "/StuyCCC/data/imgs/Shirt1.png";
-dwn_img2.src = "/StuyCCC/data/imgs/Shirt2.png";
+dwn_img1.src = "/StuyCCC/data/imgs/Shirt1.png"; //pls work
+dwn_img2.src = "/StuyCCC/data/imgs/Shirt2.png"; // pls work
 
 /********** END SUPER USEFUL ASYNCHROUS IMG LOADING SCRIPT **********pls/
