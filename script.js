@@ -33,7 +33,6 @@ var leadership = [
     ['Johnny Wong', 'Senior', 'Teacher', 'None', 'Join Ultimate to throw an exception(al Frisbee)!!!!'],
     ['Meredith Hu', 'Senior', 'Teacher', 'None', ''],
     ['Ricky Lin', 'Senior', 'Teacher', 'None', ''],
-    ['Simon Berens', 'Senior', 'Teacher', 'None', ''],
     ['Leilei Hao', 'Junior', 'Teacher', 'leilei.jpg', '']
 ];
 
