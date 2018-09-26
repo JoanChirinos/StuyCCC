@@ -7,13 +7,18 @@ Now you guys shall introduce yourselves.
 !!ulist!!
 StuyCCC Shirts
 a[StuyCCC Website](joanchirinos.github.io/StuyCCC)
-Facebook page (would y'all prefer a FB page or just StuyActivities + StuyCCC Website + emails?)
+Facebook page
+Emails (and the importance of replying to them!)
 !!endulist!!
 
 In this club you will learn:
 !!ulist!!
-How to write python
+How to write Python
 How to CS
 How to think in CS
 How to apply CS knowledge to Competitive Programming
 !!endulist!!
+
+Initially, we shall be spending plenty of time sans computers because it's better to understand concepts then apply them to writing code than to just jump in with code
+
+Learning Python may be easier than learning C or something, but it still takes some time and commitment and, potentially, work outside of class. So if you hate learning, adios!
