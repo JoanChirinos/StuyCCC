@@ -2,7 +2,7 @@ var lessons = [
 
     ['Lesson 1: What is this club?', 'Lessons/lesson1.html']
 
-];
+]; 
 var utils = [
 
     ['CodingBat Python Practice', 'https://codingbat.com/python']
