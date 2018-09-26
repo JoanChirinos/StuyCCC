@@ -2,7 +2,7 @@ var lessons = [
 
     ['Lesson 1: What is this club?', 'Lessons/lesson1.html']
 
-]; 
+];
 var utils = [
 
     ['CodingBat Python Practice', 'https://codingbat.com/python']
@@ -30,7 +30,7 @@ var leadership = [
     ['Alexander Liu', 'Senior', 'Teacher', 'None', ''],
     ['Bill Ni', 'Senior', 'Teacher', 'bill.jpg', 'yes'],
     ['Jason Tung', 'Senior', 'Teacher', 'None', ''],
-    ['Johnny Wong', 'Senior', 'Teacher', 'None', ''],
+    ['Johnny Wong', 'Senior', 'Teacher', 'None', 'Join Ultimate to throw an exception(al Frisbee)!!!!'],
     ['Meredith Hu', 'Senior', 'Teacher', 'None', ''],
     ['Ricky Lin', 'Senior', 'Teacher', 'None', ''],
     ['Simon Berens', 'Senior', 'Teacher', 'None', ''],
