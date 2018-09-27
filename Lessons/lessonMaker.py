@@ -18,6 +18,8 @@
 #
 # start a heading with !!h<number>!!. It will be one line
 #
+# <, >, &, and TABs will automatically be replaced with their html equivalents
+#
 # others shall be added l8r
 #
 #############################################
@@ -33,6 +35,12 @@ def go():
     
     #start html file
     html = "<html>"
+    
+    #replace >, <, &, and TABs
+    pretext = pretext.replace('&', '&amp;')
+    pretext = pretext.replace('\t', '&emsp;')
+    pretext = pretext.replace('<', '&lt;')
+    pretext = pretext.replace('>', '&gt;')
     
     #fill in html
     pretext = pretext.split('\n')
