@@ -53,7 +53,7 @@ def go():
     for i in pretext[1:]:
         if in_html:
             if i != '!!endhtml!!':
-                html += i + '\n'
+                html += i.replace('&gt;', '>').replace('&lt;', '<').replace('&emsp;', '\t').replace('&amp;', '&') + '\n'
             else:
                 in_html = False
             continue
