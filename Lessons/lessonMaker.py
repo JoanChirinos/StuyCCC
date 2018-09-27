@@ -53,6 +53,7 @@ def go():
     in_html = False #will be true if user is adding custom html --> will ignore all steps and paste users html in file
     
     for i in pretext[1:]:
+        print(i)
         if i[:10] == '!!breaks!!':
             num = int(i[10:])
             html += '<br>\n' * num
@@ -86,15 +87,18 @@ def go():
             if found.strip('!') == 'olist':
                 html += '\n<ol>\n'
                 in_list = True
+                print('START OL')
             
             #unordered lists
             elif found.strip('!') == 'ulist':
                 html += '\n<ul>\n'
                 in_list = True
+                print('START UL')
             
             #custom html
             elif found.strip('!') == 'html':
                 in_html = True
+                print('START HTML')
             
             #anything else
             else:
@@ -105,6 +109,7 @@ def go():
         x = re.match(r'image\(https?://.*\)', i)
         if x != None:
             html += '<img src="' + x.group()[6:-1] + '">\n'
+            print('ADDING IMG')
             continue
             
         #check for hyperlink
