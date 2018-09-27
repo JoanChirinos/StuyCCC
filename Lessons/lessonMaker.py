@@ -20,6 +20,8 @@
 #
 # <, >, &, and TABs will automatically be replaced with their html equivalents
 #
+# For spacing, use !!breaks!!<number>, <number> being the number of breaks you want
+#
 # others shall be added l8r
 #
 #############################################
@@ -51,6 +53,10 @@ def go():
     in_html = False #will be true if user is adding custom html --> will ignore all steps and paste users html in file
     
     for i in pretext[1:]:
+        if i[:10] == '!!breaks!!':
+            num = int(i[10:])
+            html += '<br>\n' * num
+            continue
         if in_html:
             if i != '!!endhtml!!':
                 html += i.replace('&gt;', '>').replace('&lt;', '<').replace('&emsp;', '\t').replace('&amp;', '&') + '\n'

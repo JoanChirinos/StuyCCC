@@ -3,48 +3,7 @@ Lesson 3: What even are loops?
 K, everyone count to 10
 K, everyone count backwards from 10 to 0
 !!h3!!Any questions?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+!!breaks!!45
 Hopefully there is enough space so that y'all don't immediately see this
 Anyway, we are going to introduce loops
 They are exactly what they sound like. They loop from one value to another until they finish or crash
@@ -68,34 +27,7 @@ for i in range(10):
 !!h3!!When to use each one
 
 Anyone have any ideas?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+!!breaks!!30
 !!html!!
 <center><table border="1" style="max-width: 700px; width: 50vw;">
 	<tr>
