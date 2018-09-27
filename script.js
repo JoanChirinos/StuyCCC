@@ -10,7 +10,7 @@ var student_lessons = [
 
 var teacher_lessons = [
 
-
+    ['Lesson 0: What even is this club?', 'Lessons/Teacher/lesson0.html']
 
 ];
 
