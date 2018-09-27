@@ -1,7 +1,8 @@
 var student_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/Student/lesson0.html'],
-    ['Lesson 1: What even is Python', 'Lessons/Student/lesson1.html']
+    ['Lesson 1: What even is Python?', 'Lessons/Student/lesson1.html'],
+    ['Lesson 2: What even are Strings?', 'Lessons/Student/lesson2.html']
 
 ];
 
@@ -19,7 +20,8 @@ var utils = [
 var links = [
 
     ['Rosalind', 'http://rosalind.info/'],
-    ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition']
+    ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition'],
+    ['w3schools Python Reference', 'https://www.w3schools.com/python/']
 
 ];
 

@@ -1,0 +1,137 @@
+<html><h1>Lesson 2: What even are Strings?</h1>
+<br>
+<p>Strings are a computer's way of representing words</p>
+<p>In a very low level, they're really just lists of characters, but you don't have to worry about that right now</p>
+<br>
+<p>To define a string</p>
+<p>&emsp;string = "Hello world!"</p>
+<br>
+<p>To access individual characters in a string, we use square brackets</p>
+<p>Examples: If str = "Hello world!"</p>
+
+<ul>
+<li>
+<p>str[0] --&gt; "H"</p>
+</li>
+<li>
+<p>str[5] --&gt; " "</p>
+</li>
+<li>
+<p>str[11] --&gt; "!"</p>
+</li>
+<li>
+<p>str[-1] --&gt; ????</p>
+</li>
+</ul>
+
+<br>
+<p>We can also access substrings (parts of a string)</p>
+<p>Examples: If str = "Hello world!"</p>
+
+<ul>
+<li>
+<p>str[0:5] --&gt; "Hello"</p>
+</li>
+<li>
+<p>str[:5] --&gt; "Hello"</p>
+</li>
+<li>
+<p>str[6:12] --&gt; "world!</p>
+</li>
+<li>
+<p>str[6:] --&gt; "World!"</p>
+</li>
+<li>
+<p>s[:] --&gt; ????</p>
+</li>
+<li>
+<p>s[:-1] --&gt; ????</p>
+</li>
+<li>
+<p>s[-1:] --&gt; ????</p>
+</li>
+</ul>
+
+<br>
+<p>We can also do math with strings (kind of)</p>
+<p>Examples: If str = "Yo"</p>
+
+<ul>
+<li>
+<p>str * 2 --&gt; "YoYo"</p>
+</li>
+<li>
+<p>str + str --&gt; "YoYo"</p>
+</li>
+<li>
+<p>str + "-" + str --&gt; "Yo-Yo"</p>
+</li>
+<li>
+<p>str - "Y" --&gt; ????</p>
+</li>
+<li>
+<p>str / "o" --&gt; ????</p>
+</li>
+</ul>
+
+<br>
+<p>Finally, there are some important string methods y'all should know</p>
+<p>Let str be a string</p>
+
+<ul>
+<li>
+<p>str.captalize()</p>
+</li>
+<li>
+<p>str.count(char)</p>
+</li>
+<li>
+<p>str.find(char)</p>
+</li>
+<li>
+<p>str.index(string)</p>
+</li>
+<li>
+<p>str.rfind(char)</p>
+</li>
+<li>
+<p>str.rindex(string)</p>
+</li>
+<li>
+<p>str.replace(string, string)</p>
+</li>
+<li>
+<p>str.split(string)</p>
+</li>
+<li>
+<p>str.rsplit(string)</p>
+</li>
+<li>
+<p>str.title()</p>
+</li>
+<li>
+<p>str.upper()</p>
+</li>
+</ul>
+
+<br>
+<p>There are some things to note about these methods</p>
+
+<ul>
+<li>
+<p>You DO NOT have to memorize all of these right now. As you write more Python and mess around with Strings, the memorization will come. For now, bookmark the String reference page</p>
+</li>
+<li>
+<p>These all return a String. This means that if str = "yo" and you write str.capitalize(), str will still = "yo". However, if you write x = str.capitalize(), x will now = "Yo"</p>
+</li>
+</ul>
+
+<br>
+<p>Here is the w3schools String method reference page:</p>
+<a href="https://www.w3schools.com/python/python_ref_string.asp">w3schools Python String Reference</a>
+<br>
+
+<h3>As always, I shall take any remaining questions, comments, etc.</h3>
+
+<br>
+</html>
