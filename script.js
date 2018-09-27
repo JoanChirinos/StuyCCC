@@ -3,7 +3,8 @@ var student_lessons = [
     ['Lesson 0: What even is this club?', 'Lessons/Student/lesson0.html'],
     ['Lesson 1: What even is Python?', 'Lessons/Student/lesson1.html'],
     ['Lesson 2: What even are Strings?', 'Lessons/Student/lesson2.html'],
-    ['Lesson 3: What even are loops?', 'Lessons/Student/lesson3.html']
+    ['Lesson 3: What even are loops?', 'Lessons/Student/lesson3.html'],
+    ['Lesson 4: What even is Rosalind?', 'Lessons/Student/lesson4.html']
 
 ];
 

@@ -3,6 +3,7 @@ Rosalind is a website that we will be using to hone our computer science skills
 It's under the "Links" button on the StuyCCC site
 
 Today we're going to do our very first "unguided" problem
+I'm stealing this problem from Rosalind, hence the title of this lesson. But we will go more into Rosalind later
 
 Write code that, given a DNA string, counts the nucleotides
 
