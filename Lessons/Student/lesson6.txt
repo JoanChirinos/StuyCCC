@@ -11,7 +11,7 @@ That means we can have
 !!endulist!!
 !!breaks!!30
 So what are we doing today?
-We have 2 tasks:
+We have 3 tasks:
 !!olist!!
 Define reg_fib(n),  a function that returns a list containing the fibonacci sequence of size n when the first 2 numbers are 0 and 1
 Define fib(l, n), which is reg_fib but you're given a list, l, of size 2 containing the first 2 number

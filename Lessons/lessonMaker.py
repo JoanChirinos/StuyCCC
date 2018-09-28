@@ -36,7 +36,7 @@ def go():
     straw.close()
     
     #start html file
-    html = "<html>"
+    html = "<html><head><style>body {background-image: url(/StuyCCC/data/leaves/leaves.png);}</style></head><body>"
     
     #replace >, <, &, and TABs
     pretext = pretext.replace('&', '&amp;')
@@ -130,7 +130,7 @@ def go():
         if in_list:
             html += '</li>\n'
             
-    html += "</html>"
+    html += "</body></html>"
     
     straw = open(f.rsplit('.', 1)[0] + '.html', 'w')
     straw.write(html)
