@@ -19,13 +19,14 @@ var teacher_lessons = [
 
 var utils = [
 
-    ['CodingBat Python Practice', 'https://codingbat.com/python']
+
 
 ];
 var links = [
 
     ['Rosalind', 'http://rosalind.info/'],
     ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition'],
+    ['CodingBat Python Practice', 'https://codingbat.com/python'],
     ['w3schools Python Reference', 'https://www.w3schools.com/python/']
 
 ];
