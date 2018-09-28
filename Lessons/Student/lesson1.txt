@@ -122,12 +122,6 @@ a = a * x <---> a *= x
 a = a / x <---> a /= x
 !!endulist!!
 
-But it gets even better. If we want to either add 1 or subtract 1, we have:
-!!ulist!!
-a += 1 <---> a++
-a -= 1 <---> a--
-!!endulist!!
-
 !!h2!!I will now take questions and stuff
 
 And that's all folks. Thanks for coming and come back next time to learn about Strings!!!
