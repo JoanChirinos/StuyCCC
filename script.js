@@ -22,6 +22,7 @@ var utils = [
 
 
 ];
+
 var links = [
 
     ['Rosalind', 'http://rosalind.info/'],
@@ -159,7 +160,7 @@ function pop_leadership() {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
             if (p[4] != '') l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"" + p[4] + "\"</i></p>\n"
-            else l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"Nothing to see here...\"</i></p>\n"
+            else l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"I haven't submitted a quote yet!\"</i></p>\n"
         }
         l += "</center></div>\n<div class=\"col\"><center>";
         for (var i = 1; i < leadership.length; i += 2) {
@@ -171,7 +172,7 @@ function pop_leadership() {
                 l += "<img style=\"max-width: 25vw; max-height: 25vh;\"class=\"img-thumbnail\" src=\"data/imgs/blank-profile-picture-973460_1280.png\">\n"
             }
             if (p[4] != '') l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"" + p[4] + "\"</i></p>\n"
-            else l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"Nothing to see here...\"</i></p>\n"
+            else l += "<p><b>" + p[1] + " | " + p[2] + "</b></p>\n<p><i>\"I haven't submitted a quote yet!\"</i></p>\n"
         }
         l += "</center></div></div>\n";
         showing_leadership = true;
