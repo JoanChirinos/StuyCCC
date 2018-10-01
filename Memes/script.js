@@ -24,7 +24,7 @@ function load_top() {
 
     for (var i = 0; i < top_memes.length; i++) {
         var meme = top_memes[i];
-        to_insert += '<div class="col-3">\n<figure class="figure">\n<img class="figure-img img-thubnail img-fluid" alt="A meme" src="';
+        to_insert += '<div class="col-sm-3">\n<figure class="figure">\n<img class="figure-img img-thubnail img-fluid" alt="A meme" src="';
         to_insert += meme[0];
         to_insert += '">\n<figcaption class="figure-caption text-center">';
         to_insert += meme[1];
@@ -49,7 +49,7 @@ function load_more() {
 
     for (var i = index_at; i < index_at + 4 && i < rest_memes.length; i++) {
         var meme = rest_memes[i];
-        more_html += '<div class="col-3">\n<figure class="figure">\n<img class="figure-img img-thubnail img-fluid" alt="A meme" src="';
+        more_html += '<div class="col-sm-3">\n<figure class="figure">\n<img class="figure-img img-thubnail img-fluid" alt="A meme" src="';
         more_html += meme[0];
         more_html += '">\n<figcaption class="figure-caption text-center">';
         more_html += meme[1];
