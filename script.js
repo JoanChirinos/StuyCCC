@@ -32,12 +32,6 @@ var links = [
 
 ];
 
-var forms = [
-
-    ['Shirt Form', 'Forms/Shirts/Shirts.html']
-
-];
-
 var leadership = [
     ['Joan Chirinos', 'Senior', 'President', 'joan.jpg', 'NetLogo Master'],
     ['Cathy Cai', 'Senior', 'Vice President', 'None', ''],
@@ -57,7 +51,6 @@ var showing_lessons = false;
 var showing_utils = false;
 var showing_links = false;
 var showing_leadership = false;
-var showing_forms = false;
 
 function do_on_load() {
     if (lessons.length == 0) {
@@ -128,22 +121,6 @@ function pop_links() {
     } else showing_links = false;
     document.getElementById("links").innerHTML = l;
     console.log('===== done populating links =====');
-}
-
-function pop_forms() {
-    console.log('\n\n=====  populating forms =====\n');
-    var l = ""
-    if (!showing_forms) {
-        l = "<div class=\"row\">\n<div class=\"col\"><ul>\n";
-        for (var i = 0; i < forms.length; i++) {
-            l += "<li><a target=\"_blank\" href=\"" + forms[i][1] + "\">" + forms[i][0] + "</a></li>\n";
-            console.log("<li><a target=\"_blank\" href=\"" + forms[i][1] + "\">" + forms[i][0] + "</a></li>\n");
-        }
-        l += "</ul></div></div>\n";
-        showing_forms = true;
-    } else showing_forms = false;
-    document.getElementById("forms").innerHTML = l;
-    console.log('===== done populating forms =====');
 }
 
 function pop_leadership() {
