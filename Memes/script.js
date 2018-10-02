@@ -9,7 +9,8 @@ var top_memes = [
 
 var rest_memes = [
 
-    ['memes/meme4.jpg', 'Joan Chirinos']
+    ['memes/meme4.jpg', 'Joan Chirinos'],
+    ['memes/meme5.png', 'Victor Veytsman']
 
 ];
 
