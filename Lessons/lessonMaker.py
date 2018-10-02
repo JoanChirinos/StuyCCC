@@ -36,7 +36,7 @@ def go():
     straw.close()
     
     #start html file
-    html = "<html><head><style>body {background-image: url(/StuyCCC/data/leaves/leaves.png);} table, tr, th, td {border: 1px solid black; border-collase: collapse;}</style></head><body>"
+    html = "<html><head><style>body {background-image: url(/StuyCCC/data/leaves/leaves.png);} table, tr, th, td {border: 1px solid black; border-collapse: collapse;}</style></head><body>"
     
     #replace >, <, &, and TABs
     pretext = pretext.replace('&', '&amp;')
