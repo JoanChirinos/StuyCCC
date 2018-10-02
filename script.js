@@ -13,7 +13,7 @@ var student_lessons = [
 var teacher_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/Teacher/lesson0.html'],
-    ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson0.html']
+    ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson1.html']
 
 ];
 
