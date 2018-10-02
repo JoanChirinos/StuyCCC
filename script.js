@@ -35,7 +35,7 @@ var links = [
 var leadership = [
     ['Joan Chirinos', 'Senior', 'President', 'joan.jpg', 'NetLogo Master'],
     ['Cathy Cai', 'Senior', 'Vice President', 'None', ''],
-    ['Fiona Cai', 'Senior', 'Vice President', 'None', ''],
+    ['Fiona Cai', 'Senior', 'Vice President', 'fiona.jpg', 'ogre achiever'],
     ['Maryann Foley', 'Senior', 'Vice President', 'None', ''],
     ['Aaron Li', 'Senior', 'Teacher', 'None', ''],
     ['Alexander Liu', 'Senior', 'Teacher', 'None', ''],
