@@ -13,20 +13,52 @@ or
 and
 !!endulist!!
 
-If a = True and b = False
-!!ulist!!
-a and a = True
-a and b = False
-b and a = False
-b and b = False
-!!endulist!!
+!!html!!
 
-!!ulist!!
-a or a = True
-a or b = True
-b or a = True
-b or b = False
-!!endulist!!
+<table style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <th>boolean p</th>
+                <th>boolean q</th>
+                <th>not p</th>
+                <th>not q</th>
+                <th>p and q</th>
+                <th>p or q</th>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+!!endhtml!!
 
 What are:
 !!olist!!
