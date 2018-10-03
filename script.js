@@ -40,7 +40,6 @@ var leadership = [
     ['Aaron Li', 'Senior', 'Teacher', 'None', ''],
     ['Alexander Liu', 'Senior', 'Teacher', 'None', ''],
     ['Bill Ni', 'Senior', 'Teacher', 'bill.jpg', 'yes'],
-    ['Jason Tung', 'Senior', 'Teacher', 'None', ''],
     ['Johnny Wong', 'Senior', 'Teacher', 'johnny.jpg', 'Join Ultimate to throw an exception(al Frisbee)!!!!'],
     ['Meredith Hu', 'Senior', 'Teacher', 'None', ''],
     ['Ricky Lin', 'Senior', 'Teacher', 'None', ''],

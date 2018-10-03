@@ -9,9 +9,11 @@ function load_images() {
 
 var img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
 
 var dwn_img1 = new Image();
 var dwn_img2 = new Image();
+var dwn_img3 = new Image();
 
 dwn_img1.onload = function () {
     img1.src = this.src;
@@ -21,7 +23,12 @@ dwn_img2.onload = function () {
     img2.src = this.src;
 };
 
-dwn_img1.src = "/StuyCCC/data/imgs/Shirt1.png"; //pls work
-dwn_img2.src = "/StuyCCC/data/imgs/Shirt2.png"; // pls work
+dwn_img3.onload = function () {
+    img3.src = this.src;
+};
+
+dwn_img1.src = "/StuyCCC/data/imgs/Shirt1.png";
+dwn_img2.src = "/StuyCCC/data/imgs/Shirt2.png";
+dwn_img3.src = "/StuyCCC/data/imgs/Shirt3.png";
 
 /********** END SUPER USEFUL ASYNCHROUS IMG LOADING SCRIPT **********/
