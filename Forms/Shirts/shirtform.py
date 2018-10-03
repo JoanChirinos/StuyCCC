@@ -32,7 +32,7 @@ def go():
     
     #redirect
     print("""<html><head></head><body><script>window.onload = function() {
-    window.location.href = "http://homer.stuy.edu/~jchirinos/StuyCCC/";
+    window.close();
     }</script></body></html>""")
     
 go()
