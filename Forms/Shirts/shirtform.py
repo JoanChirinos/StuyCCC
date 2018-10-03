@@ -21,9 +21,9 @@ def go():
     
     if shirt != '':
         if shirt == '1':
-            vals[0]++
+            vals[0] += 1
         elif shirt == '2':
-            vals[1]++
+            vals[1] += 1
     
     #write new vals
     straw = open('shirts.txt', 'w')
