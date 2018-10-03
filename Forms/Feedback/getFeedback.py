@@ -10,7 +10,7 @@ def go():
     text = straw.read()
     straw.close()
     
-    print('<html><head><style>table, th, tr, td {border: 1px solid black; border-collapse: collapse;}</stye></head><body><table>')
+    print('<html><head><style>table, th, tr, td {border: 1px solid black; border-collapse: collapse;}</style></head><body><table>')
     print('<tr><th>Name</th><th>Feedback</th></tr>\n\n')
     
     f_list = [i.split('|', 1) for i in text.split('\n')]
