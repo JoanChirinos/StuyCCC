@@ -17,14 +17,17 @@ var dwn_img3 = new Image();
 
 dwn_img1.onload = function () {
     img1.src = this.src;
+    console.log('loaded shirt1');
 };
 
 dwn_img2.onload = function () {
     img2.src = this.src;
+    console.log('loaded shirt2');
 };
 
 dwn_img3.onload = function () {
     img3.src = this.src;
+    console.log('loaded shirt3');
 };
 
 dwn_img1.src = "/~jchirnos/StuyCCC/data/imgs/Shirt1.png";
