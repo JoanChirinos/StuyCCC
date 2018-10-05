@@ -15,7 +15,7 @@ def go():
     
     f_list = [i.split('|', 1) for i in text.split('\n')]
     for f in f_list:
-        if f == '':
+        if f == ['']:
             continue
         print('<tr><td>' + f[0] + '</td><td>' + f[1] + '</td></tr>\n')
     
