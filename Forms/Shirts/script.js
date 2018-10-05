@@ -30,9 +30,9 @@ dwn_img3.onload = function () {
     console.log('loaded shirt3');
 };
 
-dwn_img1.src = "/~jchirnos/StuyCCC/data/imgs/Shirt1.png";
-dwn_img2.src = "/~jchirnos/StuyCCC/data/imgs/Shirt2.png";
-dwn_img3.src = "/~jchirnos/StuyCCC/data/imgs/Shirt3.png";
+dwn_img1.src = "/~jchirinos/StuyCCC/data/imgs/Shirt1.png";
+dwn_img2.src = "/~jchirinos/StuyCCC/data/imgs/Shirt2.png";
+dwn_img3.src = "/~jchirinos/StuyCCC/data/imgs/Shirt3.png";
 
 
 /********** END SUPER USEFUL ASYNCHROUS IMG LOADING SCRIPT **********/
