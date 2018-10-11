@@ -13,7 +13,8 @@ var student_lessons = [
 var teacher_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/Teacher/lesson0.html'],
-    ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson1.html']
+    ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson1.html'],
+    ['Lesson 2: Continuing our CC Edumacation', 'Lessons/Teacher/lesson2.html']
 
 ];
 
@@ -47,10 +48,10 @@ var leadership = [
 ];
 
 var forms = [
-  
+
     ['Shirt Form', 'http://homer.stuy.edu/~jchirinos/StuyCCC/Forms/Shirts/Shirts.html'],
     ['Feedback Form', 'http://homer.stuy.edu/~jchirinos/StuyCCC/Forms/Feedback']
-    
+
 ];
 
 var showing_lessons = false;
@@ -81,12 +82,12 @@ function pop_lessons() {
     console.log('\n\n=====  populating lessons =====\n');
     var l = ""
     if (!showing_lessons) {
-        l = "<div class=\"row\">\n<div class=\"col\"><b>Student Lessons</b><ul>\n";
+        l = "<div class=\"row\">\n<div class=\"col\"><b>Beginner Lessons</b><ul>\n";
         for (var i = 0; i < student_lessons.length; i++) {
             l += "<li><a target=\"_blank\" href=\"" + student_lessons[i][1] + "\">" + student_lessons[i][0] + "</a></li>\n";
             console.log("<li><a target=\"_blank\" href=\"" + student_lessons[i][1] + "\">" + student_lessons[i][0] + "</a></li>\n");
         }
-        l += '</ul><b>Teacher Lessons</b><ul>'
+        l += '</ul><b>Advanced Lessons</b><ul>'
         for (var i = 0; i < teacher_lessons.length; i++) {
             l += "<li><a target=\"_blank\" href=\"" + teacher_lessons[i][1] + "\">" + teacher_lessons[i][0] + "</a></li>\n";
             console.log("<li><a target=\"_blank\" href=\"" + teacher_lessons[i][1] + "\">" + teacher_lessons[i][0] + "</a></li>\n");
