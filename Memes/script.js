@@ -10,12 +10,14 @@ var top_memes = [
 var rest_memes = [
 
     ['memes/meme4.jpg', 'Joan Chirinos'],
-    ['memes/meme5.png', 'Victor Veytsman']
+    ['memes/meme5.png', 'Victor Veytsman'],
+    ['memes/meme6.jpg', 'Johnny Wong'],
+    ['memes/meme7.png', 'Johnny Wong']
 
 ];
 
 
-//This will load the top memes, which 
+//This will load the top memes, which
 function load_top() {
 
     console.log('LOADING TOP');
