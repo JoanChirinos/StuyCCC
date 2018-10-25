@@ -14,7 +14,8 @@ var teacher_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/Teacher/lesson0.html'],
     ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson1.html'],
-    ['Lesson 2: Continuing our CC Edumacation', 'Lessons/Teacher/lesson2.html']
+    ['Lesson 2: Continuing our CC Edumacation', 'Lessons/Teacher/lesson2.html'],
+    ['Lesson 3: PClassic', 'Lessons/Teacher/lesson3.html']
 
 ];
 

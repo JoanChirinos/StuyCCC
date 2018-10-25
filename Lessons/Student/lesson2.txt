@@ -40,7 +40,7 @@ str / "o" --> ????
 Finally, there are some important string methods y'all should know
 Let str be a string
 !!ulist!!
-str.captalize()
+str.capitalize()
 str.count(char)
 str.find(char)
 str.index(string)
