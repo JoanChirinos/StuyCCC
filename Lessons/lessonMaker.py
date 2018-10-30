@@ -1,3 +1,7 @@
+############################
+# LESSON MAKER FOR STUYCCC #
+############################
+
 ########## The lesson maker syntax ##########
 #
 # First line should be lesson title
@@ -34,24 +38,24 @@ def go():
     straw = open(f, 'r')
     pretext = straw.read()
     straw.close()
-    
+
     #start html file
     html = "<html><head><style>body {background-image: url(/StuyCCC/data/leaves/leaves.png);} table, tr, th, td {border: 1px solid black; border-collapse: collapse;}</style></head><body>"
-    
+
     #replace >, <, &, and TABs
     pretext = pretext.replace('&', '&amp;')
     pretext = pretext.replace('\t', '&emsp;')
     pretext = pretext.replace('<', '&lt;')
     pretext = pretext.replace('>', '&gt;')
-    
+
     #fill in html
     pretext = pretext.split('\n')
-    
+
     html += '<h1>' + pretext[0] + '</h1>\n' #adds title
-    
+
     in_list = False #will be true if in olist --> precedes every element with <li>
     in_html = False #will be true if user is adding custom html --> will ignore all steps and paste users html in file
-    
+
     for i in pretext[1:]:
         if i[:10] == '!!breaks!!':
             num = int(i[10:])
@@ -76,37 +80,37 @@ def go():
         if i == '':
             html += '<br>\n'
             continue
-        
+
         #check for list
         x = re.match(r'!![a-zA-Z]*!!', i)
         if x != None:
             found = x.group()
-            
+
             #ordered lists
             if found.strip('!') == 'olist':
                 html += '\n<ol>\n'
                 in_list = True
-            
+
             #unordered lists
             elif found.strip('!') == 'ulist':
                 html += '\n<ul>\n'
                 in_list = True
-            
+
             #custom html
             elif found.strip('!') == 'html':
                 in_html = True
-            
+
             #anything else
             else:
                 html += '<p>' + found + '</p>\n'
             continue
-            
+
         #check for img url
         x = re.match(r'image\(https?://.*\)', i)
         if x != None:
             html += '<img src="' + x.group()[6:-1] + '" target="_blank">\n'
             continue
-            
+
         #check for hyperlink
         x = re.match(r'a\[.*\]\(https*://.*\)', i)
         if x != None:
@@ -115,28 +119,28 @@ def go():
             url = re.search(r'\(https*://.*\)', full).group()[1:-1]
             html += '<p><a href="' + url + '">' + inner_text + '</a></p>\n'
             continue
-            
+
         #check for heading
         x = re.search(r'!!h\d!!', i)
         if x != None and x.end() == 6:
             tier = x.group().strip('!h')
             html += '\n<h' + tier + '>' + i[6:] + '</h' + tier + '>\n\n'
             continue
-            
-        
+
+
         #if nothing else worked
         html += '<p>' + i + '</p>\n'
-        
+
         if in_list:
             html += '</li>\n'
-            
+
     html += "</body></html>"
-    
+
     straw = open(f.rsplit('.', 1)[0] + '.html', 'w')
     straw.write(html)
     straw.close()
-    
+
     print("Wrote to " + f.rsplit('.', 1)[0] + ".html")
-    
+
 
 go()

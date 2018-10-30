@@ -1,3 +1,6 @@
+// SCRIPT.JS //
+
+
 var student_lessons = [
 
     ['Lesson 0: What even is this club?', 'Lessons/Student/lesson0.html'],
