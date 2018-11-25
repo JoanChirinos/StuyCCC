@@ -16,7 +16,7 @@
 
 <br>
 <h3>Reserved Python Words</h3>
-<p>The following identifiers are used as reserved words of the language, and cannot be used as ordinary identifiers.</p>
+<p>The following identifiers are used as reserved words of the Python language, and cannot be used as ordinary variable or function names.</p>
       <table class="table table-bordered">
       <tr>
       <td>False</td>
@@ -69,41 +69,66 @@
       </tr>
       </table>
 
+<br>
+<h2 class="heading" itemscope itemtype="http://schema.org/WebPageElement/Heading">User defined function </h2>
 <ul>
-<li>
-<p>0, 0, 0, 0, 0, ...</p>
-</li>
-<li>
-<p>4, 4, 8, 12, 20, 32, ...</p>
-</li>
-<li>
-<p>6, 9, 15, 24, 39, ...</p>
-</li>
+<li>In Python, a user-defined function's declaration begins with the keyword def and followed by the function name. </li>
+<li>The function may take arguments(s) as input within the opening and closing parentheses, just after the function name followed by a colon.</li>
+<li>After defining the function name and arguments(s) a block of program statement(s) start at the next line and these statement(s) must be indented.</li>
 </ul>
+<p>Here is the syntax of a user defined function.</p>
+<p><strong>Syntax:</strong></p>
+<pre class='well_syntax'> def function_name(argument1, argument2, ...) :
+  &nbsp;&nbsp;&nbsp; statement_1
+  &nbsp;&nbsp;&nbsp; statement_2
+  &nbsp;&nbsp;&nbsp; ....</pre>
+<h2 class="heading" itemscope itemtype="http://schema.org/WebPageElement/Heading">Call a function</h2>
+<p>Calling a function in Python is similar to other programming languages, using the function name, parenthesis
+(opening and closing) and parameter(s). See the syntax, followed by an example. </p>
+<p><strong>Syntax:</strong></p>
+<pre class='well_syntax'>
+function_name(arg1, arg2)
+</pre>
+<p><strong>Example:</strong></p>
+<pre class="line-numbers"><code class="language-python">def avg_number(x, y):
+    print("Average of ",x," and ",y, " is ",(x+y)/2)
+avg_number(3, 4)
+</code></pre>
+<p>Output: </p>
+<pre class="output">Average of  3  and  4  is  3.5</pre>
+<p><strong>Explanation:</strong></p>
+<p>1. Lines 1-2 : Details (definition) of the function. <br>
+2. Line 3 : Call the function.<br>
+3. Line 1 : Pass parameters : x = 3, y = 4<br>
+4. Line 2 : Print the value of two parameters as well as their average value.</p>
+<p><strong>Function without arguments:</strong></p>
+<p>The following function has no arguments.</p>
+<div class='well'><p>def function_name() :<br>
+&nbsp;&nbsp;&nbsp; statement_1 <br>
+&nbsp;&nbsp;&nbsp; statement_2<br>
+&nbsp;&nbsp;&nbsp; ....</p>
+</div>
+<p><strong>Example:</strong></p>
+<pre class="line-numbers"><code class="language-python">def printt():
+    print("This is Python 3.2 Tutorial")
+    print("This is Python 3.2 Tutorial")
+    print("This is Python 3.2 Tutorial")
+printt()
+</code></pre>
+<p>Output: </p>
+<pre class="output">This is Python 3.2 Tutorial
+               This is Python 3.2 Tutorial
+               This is Python 3.2 Tutorial</pre>
+<p><strong>Explanation:</strong></p>
+<p>1. Lines 1-4 : Details (definition) of the function. <br>
+2. Line 5 : Call the function.<br>
+3. Line 1 : No parameter passes.<br>
+4. Line 2-4 : Execute three print statements.</p>
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<p>So what are we doing today?</p>
-<p>We have 3 tasks:</p>
 
-<ol>
-<li>
-<p>Define reg_fib(n),  a function that returns a list containing the fibonacci sequence of size n when the first 2 numbers are 0 and 1</p>
-</li>
-<li>
-<p>Define fib(l, n), which is reg_fib but you're given a list, l, of size 2 containing the first 2 number</p>
-</li>
-<li>
-<p>Define print_fib(l, n), which is the same as fib(l, n) but you're printing each number on a new line rather than returning the list. Make it better than fib(l, n)</p>
-</li>
-</ol>
-
-<p>If you finish, you're pretty cool. We'll go over it and I'll post code below when we're done</p>
+<p>And that's that. Y'all should be ready to tackle some Coding Bat problems now!</p>
 <br>
 <br>
 <br>
