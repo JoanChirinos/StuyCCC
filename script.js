@@ -10,6 +10,7 @@ var student_lessons = [
     ['Lesson 4: What even are lists?', 'Lessons/Student/lesson5.html'],
     ['Lesson 5: What even is Rosalind?', 'Lessons/Student/lesson4.html'],
     ['Lesson 6: What even are Fibonacci sequences?', 'Lessons/Student/lesson6.html']
+    ['Lesson 7: Some Python Syntax and Function Basics', 'Lessons/Student/lesson7.html']
 
 ];
 
