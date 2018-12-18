@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8" />
-      <title>lesson0_1</title>
+      <title>lesson1_1</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(168, 181, 209); background-color: rgb(14, 16, 22); overflow: auto; }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
@@ -638,21 +638,27 @@ pre.editor-colors pre.editor-colors .highlight-selected.syntax--background .regi
 }
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="lesson-0-what-even-is-this-club-">Lesson 0: What even is this club?</h1>
-<p>First, we shall all introduce ourselves.</p>
-<h2 id="let-s-talk-business-">Let's talk business!</h2>
-<ul>
-<li>We have a Facebook page!</li>
-<li>Please reply to emails!</li>
-<li>We also have a <a href="https://joanchirinos.github.io/StuyCCC/">website</a>!</li>
-</ul>
-<h2 id="what-shall-y-all-be-learning-in-this-club-">What shall y'all be learning in this club?</h2>
-<ul>
-<li>How to Python</li>
-<li>How to CS</li>
-<li>How to <em>think</em> in CS</li>
-<li>How to apply your CS knowledge to CS Competitions</li>
-</ul>
-<p>Though learning Python is <del>probably</del> definitely easier than learning C, it will still take a decent amount of work and commitment!</p>
-<h4 id="i-ll-take-any-questions-or-comments-y-all-have-now">I'll take any questions or comments y'all have now</h4></body>
+  <body class='markdown-preview' data-use-github-style><h1 id="lesson-1-what-is-python-and-how-do-we-use-it-">Lesson 1: What is Python and how do we use it?</h1>
+<p>Python is a deceivingly simple programming language. A lot of the syntax sounds like regular English, but don't let this fool you: Python is a very powerful programming language.</p>
+<h2 id="idle">IDLE</h2>
+<p>The editor we will be using in this club is called IDLE. It is installed in every computer in front of you, and you should get it in your home machine if you want to code from home.</p>
+<h3 id="idle-shell">IDLE Shell</h3>
+<p>When you first open up IDLE, you get the IDLE shell (by default). In the shell, we can run basic Python functions and commands.</p>
+<p>You will generally use the shell to test one-line commands.</p>
+<p>You guys should play around with the shell for a moment. Try doing some math!</p>
+<h3 id="variables">Variables</h3>
+<p>Before we get into functions and whatnot, it's good to know that we can store values for later use. We store these values in variables.</p>
+<p>Variables, for the most part, can be named any alphanumeric string that doesn't have whitespace. Variables also cannot start with a number.</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="syntax--source syntax--python">a <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">5</span></span></div><div class="line"><span class="syntax--source syntax--python">b <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">3</span></span></div><div class="line"><span class="syntax--source syntax--python">c <span class="syntax--keyword syntax--operator">=</span> a <span class="syntax--keyword syntax--operator">+</span> b</span></div><div class="line"><span class="syntax--source syntax--python">d <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--string syntax--quoted">'Joan'</span></span></div><div class="line"><span class="syntax--source syntax--python">e <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">True</span></span></div><div class="line"><span class="syntax--source syntax--python">my_num_123 <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">123</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--python"><span class="syntax--constant syntax--language">42_</span>num <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">42</span></span></div><div class="line"><span class="syntax--source syntax--python">works? <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">False</span></span></div></pre>
+<p>In the above examples, everything between <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">a</code> and <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">my_num_123</code>, inclusive, are valid variable names. Everything afterwards doesn't work.</p>
+<p>You should always try to give your variables descriptive, but brief, names. For example, there is rarely a reason to name a variable <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">a</code>.</p>
+<p>Finally, you can see that variables can have various different types. We will learn more about that later, but some simple types include <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">int</code>, <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">boolean</code>, and <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">string</code>.</p>
+<p>An <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">int</code> is a whole number, like 34</p>
+<p>A <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">boolean</code> is either <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">True</code> or <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">False</code></p>
+<p>A <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">string</code> is the equivalent of a word, like <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">'Joan'</code></p>
+<h3 id="idle-editor">IDLE Editor</h3>
+<p>If you open a new file (File -&gt; New File), you get the IDLE editor. Here, you can do more complex stuff, like define functions.</p>
+<p>To run whatever is in your editor, you can press F5. This will prompt you to save the file before you can run it.</p>
+<p>Try writing math statements in the editor and then running the program. What happens?</p>
+<p><a href="lesson1_2.html">Next</a></p></body>
 </html>

@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8" />
-      <title>lesson0_1</title>
+      <title>lesson1_3</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(168, 181, 209); background-color: rgb(14, 16, 22); overflow: auto; }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
@@ -638,21 +638,15 @@ pre.editor-colors pre.editor-colors .highlight-selected.syntax--background .regi
 }
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="lesson-0-what-even-is-this-club-">Lesson 0: What even is this club?</h1>
-<p>First, we shall all introduce ourselves.</p>
-<h2 id="let-s-talk-business-">Let's talk business!</h2>
-<ul>
-<li>We have a Facebook page!</li>
-<li>Please reply to emails!</li>
-<li>We also have a <a href="https://joanchirinos.github.io/StuyCCC/">website</a>!</li>
-</ul>
-<h2 id="what-shall-y-all-be-learning-in-this-club-">What shall y'all be learning in this club?</h2>
-<ul>
-<li>How to Python</li>
-<li>How to CS</li>
-<li>How to <em>think</em> in CS</li>
-<li>How to apply your CS knowledge to CS Competitions</li>
-</ul>
-<p>Though learning Python is <del>probably</del> definitely easier than learning C, it will still take a decent amount of work and commitment!</p>
-<h4 id="i-ll-take-any-questions-or-comments-y-all-have-now">I'll take any questions or comments y'all have now</h4></body>
+  <body class='markdown-preview' data-use-github-style><h1 id="lesson-1-what-is-python-and-how-do-we-use-it-">Lesson 1: What is Python and how do we use it?</h1>
+<h3 id="printing-returning">Printing/Returning</h3>
+<p>The correct answer is "nothing".</p>
+<p>Though your computer added a and b, you didn't tell it to do anything with the sum.</p>
+<p>The keyword function <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">print()</code> prints out some expression.</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="syntax--source syntax--python"><span class="syntax--storage syntax--type syntax--function">def</span> <span class="syntax--entity syntax--name syntax--function">add_two</span>(a, b):</span></div><div class="line"><span class="syntax--source syntax--python"><span class="leading-whitespace">  </span><span class="syntax--entity syntax--name syntax--function">print</span>(a <span class="syntax--keyword syntax--operator">+</span> b);</span></div></pre>
+<p>Try running the code above. It should print the correct answer for the numbers you give it.</p>
+<p>What if we want to add 3 numbers using the add_two function we just defined (and no plus signs)?</p>
+<pre class="editor-colors lang-python"><div class="line"><span class="syntax--source syntax--python"><span class="syntax--storage syntax--type syntax--function">def</span> <span class="syntax--entity syntax--name syntax--function">add_three</span>(a, b, c):</span></div><div class="line"><span class="syntax--source syntax--python"><span class="leading-whitespace">  </span><span class="syntax--entity syntax--name syntax--function">print</span>(<span class="syntax--entity syntax--name syntax--function">add_two</span>(a, <span class="syntax--entity syntax--name syntax--function">add_two</span>(b, c)))</span></div></pre>
+<p>This should work, right?</p>
+<p><a href="lesson1_2.html">Previous</a> | <a href="lesson1_4.html">Next</a></p></body>
 </html>
