@@ -25,6 +25,8 @@ def foo():
 
 This defines the function `foo`
 
+**`def foo()` is called the function header**
+
 As we can see, the code block must be indented. This is how Python is organized. We will go further into detail about this at the end of the lesson.
 
 Functions can also take arguments.

@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8" />
-      <title>lesson1_1</title>
+      <title>lesson1_7</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(168, 181, 209); background-color: rgb(14, 16, 22); overflow: auto; }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
@@ -639,66 +639,22 @@ pre.editor-colors pre.editor-colors .highlight-selected.syntax--background .regi
 </style>
   </head>
   <body class='markdown-preview' data-use-github-style><h1 id="lesson-1-what-is-python-and-how-do-we-use-it-">Lesson 1: What is Python and how do we use it?</h1>
-<p>Python is a deceivingly simple programming language. A lot of the syntax sounds like regular English, but don't let this fool you: Python is a very powerful programming language.</p>
-<h2 id="idle">IDLE</h2>
-<p>The editor we will be using in this club is called IDLE. It is installed in every computer in front of you, and you should get it in your home machine if you want to code from home.</p>
-<h3 id="idle-shell">IDLE Shell</h3>
-<p>When you first open up IDLE, you get the IDLE shell (by default). In the shell, we can run basic Python functions and commands.</p>
-<p>You will generally use the shell to test one-line commands.</p>
-<p>You guys should play around with the shell for a moment. Try doing some math!</p>
-<h3 id="operators">Operators</h3>
-<p>Python does infix notation for math stuff.</p>
-<h4 id="arithmetic-operators">Arithmetic Operators</h4>
-<ul>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">+</code> for addition</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">-</code> for subtraction</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">*</code> for multiplication</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">/</code> for division</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">%</code> for modulo</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">**</code> for exponentiation</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">//</code> floor division (rounds down)<ul>
-<li>This rounds towards -infinity<ul>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">3 // 4 --&gt; 0</code></li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">-3 // 4 --&gt; -1</code></li>
-</ul>
+<h2 id="exercises">Exercises</h2>
+<ol>
+<li>What is 21 raised to the 14th power?</li>
+<li>Write a function with the header <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">add_four(a, b, c, d)</code> that adds the 4 arguments together and returns the result. You're allowed to define <strong>ONE</strong> other function (a helper function), and you can only use <strong>ONE</strong> plus sign (<code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">+</code>) in total.</li>
+<li>Given the function header <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">def sleep_in(is_weekday, is_vacation)</code>:<ol>
+<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">is_weekday</code> is true if it's a weekday</li>
+<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">is_vacation</code> is true if we're on vacation</li>
+<li>We sleep in if it's not a weekday, or if we're on vacation</li>
+<li>Return <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">True</code> if we sleep in</li>
+</ol>
 </li>
-</ul>
+<li>Given the function header <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sum_double(a, b)</code><ol>
+<li>If the arguments are different, return their sum</li>
+<li>If the arguments are the same, return <strong>double</strong> their sum</li>
+</ol>
 </li>
-</ul>
-<h4 id="comparison-operators">Comparison Operators</h4>
-<ul>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">==</code> for equality ("equals")</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">!=</code> for inequality ("not equals")</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&gt;</code> for greater than</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;</code> for less than</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&gt;=</code> for greater than or equal to</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">&lt;=</code> for less than or equal to</li>
-</ul>
-<h4 id="membership-operators">Membership Operators</h4>
-<p>These work on lists, tuples, etc.</p>
-<ul>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">in</code> checks if item is in the collection</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">not in</code> check is item is not in the collection</li>
-</ul>
-<h4 id="logical-operators">Logical Operators</h4>
-<ul>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">and</code> is true if both operands are true</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">or</code> is true if at least one operand is true</li>
-<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">not</code> reverses the logical state of the operand</li>
-</ul>
-<h3 id="variables">Variables</h3>
-<p>Before we get into functions and whatnot, it's good to know that we can store values for later use. We store these values in variables.</p>
-<p>Variables, for the most part, can be named any alphanumeric string that doesn't have whitespace. Variables also cannot start with a number.</p>
-<pre class="editor-colors lang-python"><div class="line"><span class="syntax--source syntax--python">a <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">5</span></span></div><div class="line"><span class="syntax--source syntax--python">b <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">3</span></span></div><div class="line"><span class="syntax--source syntax--python">c <span class="syntax--keyword syntax--operator">=</span> a <span class="syntax--keyword syntax--operator">+</span> b</span></div><div class="line"><span class="syntax--source syntax--python">d <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--string syntax--quoted">'Joan'</span></span></div><div class="line"><span class="syntax--source syntax--python">e <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">True</span></span></div><div class="line"><span class="syntax--source syntax--python">my_num_123 <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">123</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--python"><span class="syntax--constant syntax--language">42_</span>num <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">42</span></span></div><div class="line"><span class="syntax--source syntax--python">works? <span class="syntax--keyword syntax--operator">=</span> <span class="syntax--constant syntax--language">False</span></span></div></pre>
-<p>In the above examples, everything between <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">a</code> and <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">my_num_123</code>, inclusive, are valid variable names. Everything afterwards doesn't work.</p>
-<p>You should always try to give your variables descriptive, but brief, names. For example, there is rarely a reason to name a variable <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">a</code>.</p>
-<p>Finally, you can see that variables can have various different types. We will learn more about that later, but some simple types include <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">int</code>, <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">boolean</code>, and <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">string</code>.</p>
-<p>An <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">int</code> is a whole number, like 34</p>
-<p>A <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">boolean</code> is either <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">True</code> or <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">False</code></p>
-<p>A <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">string</code> is the equivalent of a word, like <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">'Joan'</code></p>
-<h3 id="idle-editor">IDLE Editor</h3>
-<p>If you open a new file (File -&gt; New File), you get the IDLE editor. Here, you can do more complex stuff, like define functions.</p>
-<p>To run whatever is in your editor, you can press F5. This will prompt you to save the file before you can run it.</p>
-<p>Try writing math statements in the editor and then running the program. What happens?</p>
-<p><a href="lesson1_2.html">Next</a></p></body>
+</ol>
+<p><a href="lesson1_6.html">Previous</a></p></body>
 </html>

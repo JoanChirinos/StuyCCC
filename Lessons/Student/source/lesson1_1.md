@@ -14,6 +14,40 @@ You will generally use the shell to test one-line commands.
 
 You guys should play around with the shell for a moment. Try doing some math!
 
+### Operators
+
+Python does infix notation for math stuff.
+
+#### Arithmetic Operators
+- `+` for addition
+- `-` for subtraction
+- `*` for multiplication
+- `/` for division
+- `%` for modulo
+- `**` for exponentiation
+- `//` floor division (rounds down)
+  - This rounds towards -infinity
+    - `3 // 4 --> 0`
+    - `-3 // 4 --> -1`
+
+#### Comparison Operators
+- `==` for equality ("equals")
+- `!=` for inequality ("not equals")
+- `>` for greater than
+- `<` for less than
+- `>=` for greater than or equal to
+- `<=` for less than or equal to
+
+#### Membership Operators
+These work on lists, tuples, etc.
+- `in` checks if item is in the collection
+- `not in` check is item is not in the collection
+
+#### Logical Operators
+- `and` is true if both operands are true
+- `or` is true if at least one operand is true
+- `not` reverses the logical state of the operand
+
 ### Variables
 
 Before we get into functions and whatnot, it's good to know that we can store values for later use. We store these values in variables.
