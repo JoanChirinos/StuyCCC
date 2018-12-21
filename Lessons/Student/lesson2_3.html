@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>lesson2_2</title>
+    <title>lesson2_3</title>
     <style>
       .markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(168, 181, 209); background-color: rgb(14, 16, 22); overflow: auto; }
       .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
@@ -643,21 +643,33 @@
     </style>
   </head>
   <body class="markdown-preview" data-use-github-style>
-    <h1>Lesson 2.2: What even are Strings?</h1>
-    <h2>Math with Strings</h2>
-    <h3>Examples: If <code style="codewords">str = "Yo"</code> Try these examples yourself and fill in the "????"</h3>
-    <p><code style="codewords">str * 2</code> --&gt; <code style="codewords">"YoYo"</code></p>
+    <h1>Lesson 2.3: What even are Strings?</h1>
+    <h2>String Methods</h2>
+    <h3>Let <code style="codewords">str</code> be a string. Try these examples yourself and fill in the documentation for the methods that have "????"</h3>
+    <p><code style="codewords">str.capitalize()</code> Converts the first character of a string to a capital letter.</p>
 
-    <p><code style="codewords">str + str</code> --&gt; <code style="codewords">"YoYo"</code></p>
+    <p><code style="codewords">str.count(char)</code> Counts the occasion that the character "char" appears in the string. Note that "char" here is only a variable and can be replaced with any other single character.</p>
 
-    <p><code style="codewords">str + "-" + str</code> --&gt; <code style="codewords">"Yo-Yo"</code></p>
+    <p><code style="codewords">str.find(char)</code> This will return the index of a substring inside the string. You can only look for one single character.</p>
 
-    <p><code style="codewords">str - "Y"</code> --&gt; <code style="codewords">????</code></p>
+    <p><code style="codewords">str.index(string)</code> This will return the index of a substring inside the string. You could look for a particular sequence of characters, such as "hello" in the string "hello world!"</p>
 
-    <p><code style="codewords">str / "o"</code> --&gt; <code style="codewords">????</code></p>
+    <p><code style="codewords">str.rfind(char)</code> ????</p>
 
-    <br>
+    <p><code style="codewords">str.rindex(string)</code> ????</p>
 
-    <p><a href="lesson2_1.html">Previous</a> | <a href="lesson2_3.html">Next</a></p>
+    <p><code style="codewords">str.replace(string, string)</code> This replaces all substrings within a string by another substring.</p>
+
+    <p><code style="codewords">str.split(string)</code> ????</p>
+
+    <p><code style="codewords">str.rsplit(string)</code> ????</p>
+
+    <p><code style="codewords">str.title()</code> ????</p>
+
+    <p><code style="codewords">str.upper()</code> ????</p>
+
+    <p>What are some good ways to figure out what a method does?</p>
+
+    <p><a href="lesson2_2.html">Previous</a> | <a href="lesson2_4.html">Next</a></p>
   </body>
 </html>
