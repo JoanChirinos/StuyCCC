@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>lesson2_3</title>
+    <title>lesson2_1</title>
     <style>
       .markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(168, 181, 209); background-color: rgb(14, 16, 22); overflow: auto; }
       .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
@@ -639,23 +639,26 @@
       }
       .codewords {
         font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;
+        font-size: 14px
       }
     </style>
   </head>
   <body class="markdown-preview" data-use-github-style>
-    <h1>Lesson 2: What even are Strings?</h1>
-    <h2>Some things to note:</h2>
-    <p>Here is the w3schools String method reference page:</p>
-    <p><a href="https://www.w3schools.com/python/python_ref_string.asp">w3schools Python String Reference</a></p>
+    <h1>Lesson 3: What even are Loops?</h1>
+    <p>Loops are events that occur over and over, looping from one value to another until they finish or crash.</p>
+    <p>Python provides two ways to execute these loops</p>
+    <h2>For Loops</h2>
+    <p>Runs through a block of code a number of times</p>
+    <pre class="editor-colors lang-python">
+      <span class="syntax--source syntax--python">for i in range(10):
+        <span class="syntax--storage syntax--type syntax--function">print(i)</span>
+    </pre>
     <br>
-    <p>You DO NOT have to memorize all of the methods right now. As you write more Python and mess around with Strings, the memorization will come. For now, bookmark the String reference page</p>
+    <p>Use this when you know how many times the loop will ilterate, but not the endpoint.</p>
+    <p>You can use a [while loop] for [for loop] functions, but not vice versa.</p>
+    <p>In general, the [for loop] is more powerful when it comes to larger ilterations</p>
     <br>
-    <p>Note that these methods will all return a String.</p>
+    <p><a href="lesson3_1.html">Previous</a> | <a href="lesson3_3.html">Next</a></p>
     <br>
-    <p>This means that if <code style="codewords">str = "yo"</code> and you write <code style="codewords">str.capitalize()</code>, <code style="codewords">str</code> will still be <code style="codewords">"yo"</code>. However, if you write <code style="codewords">x = str.capitalize()</code>, x will now be <code style="codewords">"Yo"</code></p>
-    <br>
-
-    <p><a href="lesson2_3.html">Previous</a> | <a href="lesson2_5.html">Next</a></p>
-  </body>
   </body>
 </html>
