@@ -8,9 +8,8 @@ var student_lessons = [
     ['Lesson 2: What even are Strings?', 'Lessons/Student/lesson2_1.html'],
     ['Lesson 3: What even are loops?', 'Lessons/Student/lesson3_1.html'],
     ['Lesson 4: What even are lists?', 'Lessons/Student/lesson4_1.html'],
-    ['Lesson 5: What even is Rosalind?', 'Lessons/Student/lesson5_1.html'],
-    ['Lesson 6: What even are Fibonacci sequences?', 'Lessons/Student/lesson6_1.html'],
-    ['Lesson 7: What are regular expressions?', 'Lessons/Student/lesson7_1.html']
+    ['Lesson 5: What even are Fibonacci sequences?', 'Lessons/Student/lesson6_1.html'],
+    ['Lesson 6: What are regular expressions?', 'Lessons/Student/lesson7_1.html']
 
 ];
 
@@ -20,7 +19,6 @@ var teacher_lessons = [
     ['Lesson 1: How to start thinking in efficient CS?', 'Lessons/Teacher/lesson1.html'],
     ['Lesson 2: Continuing our CC Edumacation', 'Lessons/Teacher/lesson2.html'],
     ['Lesson 3: PClassic', 'Lessons/Teacher/lesson3.html']
-
 ];
 
 var utils = [
@@ -35,7 +33,7 @@ var links = [
     ['SJC Problem Sets', 'https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition'],
     ['CodingBat Python Practice', 'https://codingbat.com/python'],
     ['w3schools Python Reference', 'https://www.w3schools.com/python/'],
-    ['PClassic Info', 'http://bert.stuy.edu/pbrooks/pclassic/pclassic-fall-2018.html']
+    ['PClassic Info', 'http://bert.stuy.edu/pbrooks/pclassic']
 
 ];
 
@@ -55,8 +53,7 @@ var leadership = [
 
 var forms = [
 
-    ['Shirt Form', 'http://homer.stuy.edu/~jchirinos/StuyCCC/Forms/Shirts/Shirts.html'],
-    ['Feedback Form', 'http://homer.stuy.edu/~jchirinos/StuyCCC/Forms/Feedback']
+  
 
 ];
 
